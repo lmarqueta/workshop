@@ -10,7 +10,7 @@ def pempriv(n, e, d, p, q, dP, dQ, qInv):
     der = pyasn1.codec.der.encoder.encode(seq)
     return template.format(base64.encodestring(der).decode('ascii'))
 
-# Previously calculated data:
+# Sample data:
 n = 0x00d078004d524e0d7635eb71eaa640bc26d49e9049
 d = 0xc139c945e1f8d8bf6ddf3e76f7c778c8f4112bb5L
 e = 65537
